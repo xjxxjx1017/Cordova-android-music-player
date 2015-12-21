@@ -8,7 +8,10 @@ Cordova / Phonegap music player for Android. support command line control. Can p
     * Using cmd to controle music
     * Define and bind functions to command
 * Music player
-    * Play music
+    * show music list
+    * Play / pause / stop music
+    * Shuffle music list
+    * Set interval between music play
 * General
     * Gain access to SD cards
     * Save and load input widget state, locally

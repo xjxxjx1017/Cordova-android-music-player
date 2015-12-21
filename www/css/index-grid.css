@@ -1,0 +1,44 @@
+.span-1 {
+  width: 45px;
+}
+
+.span-2 {
+  width: 90px;
+}
+
+.span-3 {
+  width: 135px;
+}
+
+.span-4 {
+  width: 180px;
+}
+
+.span-5 {
+  width: 225px;
+}
+
+.span-6 {
+  width: 270px;
+}
+
+.offset-1 {
+  margin-left: 45px;
+}
+
+.offset-2 {
+  margin-left: 90px;
+}
+
+.offset-3 {
+  margin-left: 135px;
+}
+
+.offset-4 {
+  margin-left: 180px;
+}
+
+.offset-5 {
+  margin-left: 225px;
+}
+

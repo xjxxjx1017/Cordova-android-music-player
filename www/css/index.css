@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: darkslategray;  /* To make sure that <body> is at the same size as <html>. To prevent vertical scrolling*/
+}
+
+body {
+  background-color: rgb(38, 38, 38);
+  font: 400 1.5em/1.38 Arial;
+  color: rgb(225, 225, 225);
+}
+
+.background {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 545px;
+  background-color: rgb(0, 0, 0);
+}
+
+.container_footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-top: 8px;
+  padding: 5px 16px 5px 15px;
+  background-color: rgb(50, 50, 50);
+}
+
+.container_header {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 15px;
+  background-color: rgb(35, 35, 35);
+}
+
+.container_header .text {
+  float: left;
+  width: 50%;
+  background-color: rgb(63, 63, 63);
+  line-height: 1.38;
+}
+
+.text {
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+._button {
+  display: block;
+  float: left;
+  height: 45px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  background-color: rgb(173, 173, 173);
+  font-size: 0.5em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+._input {
+  display: block;
+  float: left;
+  width: 55%;
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background-color: rgb(13, 13, 13);
+  font: 400 0.542em/1.38 Helvetica;
+  color: rgb(0, 255, 0);
+}
+
+.text-1 {
+  min-height: 25px;
+  font-size: 1em;
+  color: rgb(225, 225, 225);
+}
+
+.text-2 {
+  min-height: 20px;
+  margin-top: 12px;
+  padding-top: 5px;
+  font-size: 0.5em;
+  text-align: right;
+  color: rgb(210, 210, 210);
+}
+
+.text-3 {
+  width: 90%;
+  height: 417px;
+  min-height: 417px;
+  margin: 60px auto 0;
+  padding: 10px;
+  background-color: rgb(45, 45, 45);
+  font-family: Helvetica;
+  font-size: 0.417em;
+  color: rgb(0, 255, 0);
+}
+
+.container_footer ._button-1 {
+  width: 15%;
+}
+
+.container_footer ._button-2,
+.container_footer ._button-3 {
+  width: 14.9976765799%;
+}
+
+.text strong {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}

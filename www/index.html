@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <!-- CSS -->
+    <!-- put Macaw css here-->
+    <link rel="stylesheet" href="css/standardize.css">
+    <link rel="stylesheet" href="css/index-grid.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>ConsoleInAll</title>
+</head>
+<body>
+<!-- put Macaw html here-->
+<div class="background clearfix js-sch_background">
+    <div class="container_header clearfix js-container_header">
+        <p id="xjx_title" class="text text-1"><strong>Console</strong></p>
+
+        <p id="xjx_date" class="text text-2"></p>
+    </div>
+    <div id="xjx_display" class="text text-3">
+        <p>Waiting...</p>
+    </div>
+
+    <div class="container_footer clearfix">
+        <input id="xjx_input" class="_input" name="text_input" placeholder="Waiting for your order." type="text">
+        <button class="_button _button-1">BtnA</button>
+        <button class="_button _button-2">BtnB</button>
+        <button class="_button _button-3">BtnC</button>
+    </div>
+</div>
+<!-- Cordova Dependency -->
+<script type="text/javascript" src="cordova.js"></script>
+<!-- Third party Library -->
+<script type="text/javascript" src="js/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/greensock/TweenMax.js"></script>
+<script type="text/javascript" src="js/greensock/jquery.gsap.js"></script>
+<script type="text/javascript" src="js/greensock/utils/Draggable.js"></script>
+<!-- My Library -->
+<script type="text/javascript" src="js/thirdparty.js"></script>
+<script type="text/javascript" src="js/utils/snapgrid.js"></script>
+<script type="text/javascript" src="js/utils/saveload.js"></script>
+<script type="text/javascript" src="js/utils/exernalStorageSdcardAccess.js"></script>
+<script type="text/javascript" src="js/utils/commandline/core.js"></script>
+<script type="text/javascript" src="js/utils/commandline/input.js"></script>
+<script type="text/javascript" src="js/utils/commandline/display.js"></script>
+<script type="text/javascript" src="js/utils/commandline/manager.js"></script>
+<script type="text/javascript" src="js/utils/musicplayer/core.js"></script>
+<script type="text/javascript" src="js/utils/musicplayer/manager.js"></script>
+<!-- Project Dependency -->
+<script type="text/javascript" src="js/application.js"></script>
+<script>
+    $(document).one('deviceready', Application.initApplication);
+</script>
+</body>
+</html>

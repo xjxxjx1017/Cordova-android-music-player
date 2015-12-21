@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.xjxxjx1017.console" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ConsoleForAll</name>
+    <description>
+        A console application that can perform commands
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        xjxxjx1017
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <platform name="android">
+        <icon src="res/2015-12-17 13.27.09.png" density="ldpi" />
+        <icon src="res/2015-12-17 13.27.09.png" density="mdpi" />
+        <icon src="res/2015-12-17 13.27.09.png" density="hdpi" />
+        <icon src="res/2015-12-17 13.27.09.png" density="xhdpi" />
+        <allow-intent href="market:*" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

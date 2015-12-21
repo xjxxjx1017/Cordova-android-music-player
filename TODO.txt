@@ -1,0 +1,76 @@
+
+TODO:
+
+{ Eample, Extended
+    * Bind cmd to cmd
+    * Bind button to command line
+    * Save bindings as local storage, giving them package names }
+
+_____________________________________________
+
+
+2015.12.21 Library, Christmas, 11:00AM
+----------
+Worked out the music playing methods yesterday, very pleased!
+Very please with what I've done today! ^o^/
+----------
+v Gain access to SD cards
+v Play music
+v Using cmd to controle music
+
+_____________________________________________
+
+
+2015.12.18 Library, Christmas, 11:00AM
+----------
+Continue working on command line.
+It's nicely written, a master piece!
+Someone like it already, I love it too, fancy!
+----------
+v Command line flow, simple type call and feedback
+{ Manager
+    v Put all things together and generize APIs
+    v Whrite some examples }
+{ InputALine
+    v func: inputCmd
+    v get the right input timing, provided as a module }
+{ Display
+    v line count, show only 30 lines
+    v limit characters, e.g. no more than 45
+    v insert new input lines on top }
+
+_____________________________________________
+
+
+2015.12.17 Library, Christmas, noon
+----------
+----------
+{ Parsing
+    v func: bindCmdNFunc
+    v func: runTargetFunc }
+v Changed the icon and title
+v Save and load, for general app, locally
+    v Save/load current text in the input field
+
+_____________________________________________
+
+
+2015.12.17 Library, Christmas, before noon
+----------
+Just finish the UI part and quiet happy with Macaw.
+Good work and well on track man!
+----------
+> Change the icon and title
+> Save and load, for general app, locally
+> Command line flow, simple type call and feedback
+> Regist button for command line
+> Gain access to SD cards
+> Play music
+
+_____________________________________________
+
+
+2015.
+----------
+----------
+*

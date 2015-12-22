@@ -1,10 +1,22 @@
 
 TODO:
 
-{ Eample, Extended
-    * Bind cmd to cmd
-    * Bind button to command line
-    * Save bindings as local storage, giving them package names }
+* Beautification
+* Provide more controls
+* Marketing
+* Publishing
+
+_____________________________________________
+
+
+2015.12.22 Library, Christmas, 11:00AM
+----------
+Awesome! Music player complete!
+Very please with what I've done today! ^o^/
+I'm prode of myself! ^o^/
+----------
+v Bind buttons to command line
+v Provide a acceptable flow
 
 _____________________________________________
 

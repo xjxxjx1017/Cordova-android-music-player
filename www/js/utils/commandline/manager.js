@@ -7,13 +7,14 @@ CommandLine.Manager = function ( _inputWidgetId, _displayWidgetId ) {
 
     // * Constructor
     var display = new CommandLine._Display( _displayWidgetId );
-    var input = new CommandLine._Input( _inputWidgetId, _callback );
     var core = new CommandLine._Core( _defaultHandler );
+    new CommandLine._Input( _inputWidgetId, runCommand );
     var countCmd = 0;
 
     // * Public methods
     return {
         define:core.setHandler,
+        runCommand:runCommand,
         log:log,
         clear:display.clear
     };
@@ -22,7 +23,7 @@ CommandLine.Manager = function ( _inputWidgetId, _displayWidgetId ) {
         display.addString( str );
     }
 
-    function _callback ( str ) {
+    function runCommand ( str ) {
         display.addString( "> " + countCmd++ + ": " + str );
         core.runCommand( str );
     }

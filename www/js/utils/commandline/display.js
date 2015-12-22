@@ -8,7 +8,7 @@ CommandLine._Display = function ( _widgetId ) {
     // * Constructor
     var widget = $(_widgetId);
     var strList = [];
-    var MAX_LINE = 25;
+    var MAX_LINE = 250;
     var MAX_LETTER = 45;
 
     // * Public methods

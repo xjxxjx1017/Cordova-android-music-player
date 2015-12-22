@@ -2,7 +2,7 @@
 // * Namespace
 var MusicPlayer = MusicPlayer || {};
 
-MusicPlayer.EXTENSIONS = ['.mp3', '.wav', '.m4a'];
+MusicPlayer.EXTENSIONS = ['.mp3', '.wav', '.m4a', ".MP3"];
 
 // * Class
 MusicPlayer._Core = function( _logger, _onFinishedCallback ) {

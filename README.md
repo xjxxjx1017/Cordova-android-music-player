@@ -15,10 +15,11 @@ Cordova / Phonegap music player for Android. support command line control. Can p
 * General
     * Gain access to SD cards
     * Save and load input widget state, locally
+    * Bind button to command line
 
 ### TODO
 
-* Eample, Extended
-    * Bind cmd to cmd
-    * Bind button to command line
-    * Save bindings as local storage, giving them package names }
+* Beautification
+* Provide more controls
+* Marketing
+* Publishing

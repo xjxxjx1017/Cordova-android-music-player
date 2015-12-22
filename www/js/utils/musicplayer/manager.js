@@ -3,7 +3,7 @@
 var MusicPlayer = MusicPlayer || {};
 
 // * Add input to CommandLine
-MusicPlayer.Manager = function ( _musicList, _logger ) {
+MusicPlayer.Manager = function ( _logger ) {
 
     // * Constructer
     var musicList = [];
@@ -11,15 +11,6 @@ MusicPlayer.Manager = function ( _musicList, _logger ) {
     var curPlayingId = 0;
     var timeOut = 10 * 1000;
     var isPlayerRunning = false;
-    _logger( "Checking file list..." );
-    _musicList.forEach( function( n ) {
-        if ( core.checkValid( n ) ){
-            musicList.push( n );
-        }
-        else {
-            _logger( "Inalid file: " + n );
-        }
-    } );
     core.stop();
 
     // * Public methods
@@ -29,7 +20,8 @@ MusicPlayer.Manager = function ( _musicList, _logger ) {
         stop:stop,
         shuffleList:shuffleList,
         showList:showList,
-        setInterval:setInterval
+        setInterval:setInterval,
+        changeList:changeList
     };
 
     function playPause( _playId ) {
@@ -60,13 +52,28 @@ MusicPlayer.Manager = function ( _musicList, _logger ) {
     }
 
     function showList() {
-        var count = 1;
-        _logger( "Total: " + musicList.length );
-        musicList.forEach( function(n, i) {
+        for ( var i = musicList.length - 1; i >= 0; i-- )
+        {
             var ss = i == curPlayingId ? "> " : "";
-            ss += count++ + ": " + n;
+            ss += (i+1) + ": " + musicList[i];
             _logger( ss );
-        });
+        }
+        _logger( "Total: " + musicList.length );
+    }
+
+    function changeList( list ) {
+        stop();
+        curPlayingId = 0;
+        musicList = [];
+        _logger( "Checking file list..." );
+        list.forEach( function( n ) {
+            if ( core.checkValid( n ) ){
+                musicList.push( n );
+            }
+            else {
+                _logger( "Inalid file: " + n );
+            }
+        } );
     }
 
     function setInterval( interval ) {
@@ -78,6 +85,7 @@ MusicPlayer.Manager = function ( _musicList, _logger ) {
         // * Check whether it's manually paused.
         if ( isPlayerRunning )
         {
+            _logger( "Next song will be play in " + timeOut * 0.001 + "s" );
             setTimeout( playNext, timeOut );
             isPlayerRunning = false;
         }
